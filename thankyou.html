@@ -2,47 +2,64 @@
 <html lang="es-MX">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Gracias por tu solicitud | Remate Muebles</title>
-  <meta name="description" content="Recibimos tu solicitud de cotización. Continúa por WhatsApp o agenda una llamada.">
-  <link rel="canonical" href="https://rematemuebles.com/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solicitud recibida | Remate Muebles</title>
+  <meta name="description" content="Confirmación de solicitud para Remate Muebles de Oficina.">
+  <meta name="theme-color" content="#ff7f22">
+  <meta name="robots" content="noindex, nofollow">
   <link rel="icon" type="image/png" href="assets/favicon.png">
-  <meta name="theme-color" content="#ff7a1a">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Gracias por tu solicitud | Remate Muebles">
-  <meta property="og:description" content="Recibimos tu solicitud de cotización. Continúa por WhatsApp o agenda una llamada.">
-  <meta property="og:image" content="assets/oficina-completa.webp">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<body class="thankyou-body" data-audience="thanks">
-<header class="thankyou-header"><div class="container"><a href="index.html" aria-label="Volver a Remate Muebles"><img src="assets/logo-remate-light.png" alt="Remate Muebles de Oficina Outlet" width="1032" height="404"></a></div></header>
-<main class="thankyou-main">
-  <div class="container thankyou-grid">
-    <section class="confirmation-panel">
-      <div>
-        <p class="eyebrow">Solicitud recibida</p>
-        <h1>Gracias, <span id="leadName">te leemos pronto</span>.</h1>
-        <p class="lead" id="leadSummary">Tu información quedó guardada en esta sesión.</p>
-        <div class="countdown" id="redirectNotice">Abriendo WhatsApp en <strong id="countdown">1.8</strong> segundos…</div>
-        <div class="inline-actions">
-          <a class="btn btn--dark" id="waManual" href="https://wa.me/523319856883" target="_blank" rel="noopener">Continuar por WhatsApp</a>
-          <button class="btn btn--ghost" id="cancelRedirect" type="button">Quedarme y agendar</button>
+<body data-page="thankyou" class="thankyou-page">
+  <header class="site-header is-scrolled" aria-label="Encabezado">
+    <nav class="nav">
+      <a class="logo" href="index.html" aria-label="Remate Muebles, inicio">
+        <img src="assets/logo-remate.svg" alt="Remate Muebles de Oficina Outlet" width="608" height="198">
+      </a>
+      <a class="btn btn-secondary" id="back-link" href="index.html">Volver al inicio</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container thankyou-shell">
+      <section class="thankyou-panel" aria-labelledby="thankyou-title">
+        <p class="eyebrow" id="thankyou-eyebrow">Remate Muebles</p>
+        <h1 id="thankyou-title">Solicitud enviada</h1>
+        <p class="lead" id="thankyou-message">Un asesor te contactará por llamada o WhatsApp.</p>
+
+        <dl class="thankyou-details">
+          <div>
+            <dt>Nombre</dt>
+            <dd id="detail-name">No indicado</dd>
+          </div>
+          <div>
+            <dt>Interés</dt>
+            <dd id="detail-interest">No indicado</dd>
+          </div>
+        </dl>
+
+        <div class="thankyou-actions">
+          <a class="btn btn-primary" data-whatsapp-followup href="#" target="_blank" rel="noopener">Continuar por WhatsApp</a>
+          <a class="btn btn-secondary" id="back-link-secondary" href="index.html">Volver al inicio</a>
         </div>
-      </div>
-      <div>
-        <p class="kicker">¿Qué sigue?</p>
-        <p>Un asesor podrá revisar tu solicitud. También puedes elegir un horario en el calendario.</p>
-        <a class="text-link" id="backLink" href="index.html">Volver a la landing</a>
-      </div>
-    </section>
-    <section class="calendar-panel" aria-labelledby="calendarTitle">
-      <div class="calendar-head"><p class="eyebrow">Agenda</p><h2 id="calendarTitle">Elige un horario.</h2></div>
-      <div class="calendar-wrap" id="calendarWrap">
-        <div class="calendar-placeholder" id="calendarPlaceholder"><div><strong>Calendly listo para conectar</strong><span>Reemplaza <code>CALENDLY_URL</code> en <code>script.js</code> con el enlace real de Remate Muebles.</span></div></div>
-        <iframe id="calendlyFrame" title="Agenda una llamada con Remate Muebles" loading="lazy" hidden></iframe>
-      </div>
-    </section>
-  </div>
-</main>
-<script src="script.js" defer></script>
-</body></html>
+
+        <p class="redirect-note" aria-live="polite">Te dirigiremos a WhatsApp en unos segundos.</p>
+      </section>
+
+      <section class="calendar-panel" aria-labelledby="calendar-title">
+        <h2 id="calendar-title">Agendar llamada</h2>
+        <div id="calendar-host">
+          <div class="calendar-placeholder">
+            <div>
+              <strong>Calendly</strong>
+              <p>Conecta la URL real de la agenda en <code>script.js</code>.</p>
+              <code>[DATO PENDIENTE: URL DE CALENDLY]</code>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

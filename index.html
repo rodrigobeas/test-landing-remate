@@ -2,392 +2,557 @@
 <html lang="es-MX">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Mayoreo de muebles de oficina | Remate Muebles</title>
-  <meta name="description" content="Catálogo de mobiliario de oficina para mayoristas, revendedores y proyectos corporativos. Solicita asesoría y catálogo.">
-  <link rel="canonical" href="https://rematemuebles.com/">
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <meta name="theme-color" content="#ff7a1a">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amuebla tu nueva oficina | Remate Muebles</title>
+  <meta name="description" content="Mobiliario de línea alta, nuevo y de entrega inmediata a precio outlet. Solicita una cotización personalizada para tu oficina.">
+  <meta name="theme-color" content="#ff7f22">
+  <meta property="og:title" content="Amuebla tu nueva oficina | Remate Muebles">
+  <meta property="og:description" content="Amuebla tu nuevo espacio sin complicaciones ni cajas por armar.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Mayoreo de muebles de oficina | Remate Muebles">
-  <meta property="og:description" content="Catálogo de mobiliario de oficina para mayoristas, revendedores y proyectos corporativos. Solicita asesoría y catálogo.">
-  <meta property="og:image" content="assets/oficina-completa.webp">
+  <meta property="og:image" content="assets/silla-escritorio-claro.webp">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preload" as="image" href="assets/silla-escritorio-claro.webp">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-<body data-audience="b2b">
+<body data-page="oficinistas" data-audience="b2c">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-<a class="skip-link" href="#contenido">Saltar al contenido</a>
-<header class="site-header" id="siteHeader">
-  <div class="container navbar">
-    <a class="brand" href="#inicio" aria-label="Remate Muebles, inicio">
-      <img src="assets/logo-remate.png" alt="Remate Muebles de Oficina Outlet" width="1032" height="404">
-    </a>
-    <nav class="nav-menu" id="navMenu" aria-label="Navegación principal">
-      <a class="nav-switch" href="b2c.html">Compra personal</a>
-      <a class="nav-link" href="#beneficios">Beneficios</a>
-<a class="nav-link" href="#catalogo">Catálogo</a>
-<a class="nav-link" href="#proceso">Proceso</a>
-<a class="nav-link" href="#resenas">Reseñas</a>
-<a class="nav-link" href="#showroom">Showroom</a>
-<a class="nav-link" href="#faq">FAQ</a>
-      <button class="btn btn--primary" type="button" data-open-form>Solicitar catálogo</button>
+  <header class="site-header" aria-label="Navegación principal">
+    <nav class="nav">
+      <a class="logo" href="#inicio" aria-label="Remate Muebles, inicio">
+        <img src="assets/logo-remate.svg" alt="Remate Muebles de Oficina Outlet" width="608" height="198">
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#mobiliario">Mobiliario</a></li>
+        <li><a href="#resenas">Reseñas</a></li>
+        <li><a href="#showroom">Showroom</a></li>
+        <li><a href="#preguntas">Preguntas</a></li>
+      </ul>
+
+      <button class="btn btn-primary nav-cta" type="button" data-open-modal>
+        Solicitar cotización
+      </button>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </button>
     </nav>
-    <button class="icon-btn" id="menuToggle" type="button" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
-      <span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
-    </button>
-  </div>
-</header>
-<main id="contenido">
-<section class="hero" id="inicio">
-  <div class="container hero-grid">
-    <div class="hero-copy reveal">
-      <p class="eyebrow">Mayoreo · Revendedores · Proyectos</p>
-      <h1>Más margen. Menos complicaciones.</h1>
-      <p class="lead">Muebles de oficina de línea alta a precio outlet, con catálogo amplio, disponibilidad y asesoría para cada cotización.</p>
-      <div class="inline-actions">
-        <button class="btn btn--primary" type="button" data-open-form>Solicitar catálogo y asesoría</button>
-        <a class="btn btn--ghost" href="#catalogo">Ver categorías</a>
-      </div>
-      <div class="hero-proof">
-        <span><i></i>Más de 25 años de trayectoria</span>
-        <span><i></i>Atención por WhatsApp</span>
-        <span><i></i>Showroom en Guadalajara</span>
-      </div>
-    </div>
-    <div class="hero-media reveal">
-      <figure class="hero-image"><img src="assets/oficina-completa.webp" alt="Oficina amplia equipada con escritorios y sillas negras" width="900" height="1200"></figure>
-      <div class="hero-label">Programa de mayoreo</div>
-      <div class="hero-float"><strong>Catálogo amplio</strong><span>Sillas, escritorios, almacenaje, salas y confort.</span></div>
-    </div>
-  </div>
-</section>
-<div class="trust-strip" aria-label="Beneficios clave"><div class="trust-track"><div class="trust-item">Precios por volumen</div><div class="trust-item">Muebles armados</div><div class="trust-item">Disponibilidad de catálogo</div><div class="trust-item">Asesoría personalizada</div><div class="trust-item">Entrega inmediata en tienda</div><div class="trust-item">Precios por volumen</div><div class="trust-item">Muebles armados</div><div class="trust-item">Disponibilidad de catálogo</div><div class="trust-item">Asesoría personalizada</div><div class="trust-item">Entrega inmediata en tienda</div></div></div>
-<section class="section" id="beneficios">
-  <div class="container">
-    <div class="section-head reveal">
-      <div><p class="eyebrow">Ventaja comercial</p><h2>Un proveedor que te ayuda a cerrar.</h2></div>
-      <p class="lead">Menos fricción para cotizar. Más claridad para presentar opciones a tus clientes.</p>
-    </div>
-    <div class="benefit-grid">
-      <article class="benefit-card reveal"><span class="icon-badge">%</span><div><h3>Precios por volumen</h3><p>Accede a condiciones de outlet para cuidar la rentabilidad de cada proyecto.</p></div></article>
-      <article class="benefit-card reveal"><span class="icon-badge">▦</span><div><h3>Catálogo disponible</h3><p>Opciones para distintos presupuestos, áreas y estilos de oficina.</p></div></article>
-      <article class="benefit-card reveal"><span class="icon-badge">✓</span><div><h3>Muebles armados</h3><p>Reduce tiempos de instalación y evita cajas o manuales frente a tu cliente.</p></div></article>
-      <article class="benefit-card reveal"><span class="icon-badge">↗</span><div><h3>Ergonomía que se explica fácil</h3><p>Productos pensados para jornadas de trabajo, con materiales y funciones que puedes presentar con claridad.</p></div></article>
-      <article class="benefit-card reveal"><span class="icon-badge">☎</span><div><h3>Asesoría para cotizar</h3><p>Recibe acompañamiento por llamada o WhatsApp para revisar productos, cantidades y alternativas.</p></div></article>
-    </div>
-  </div>
-</section>
-<section class="section section--white" id="catalogo">
-  <div class="container">
-    <div class="section-head reveal">
-      <div><p class="eyebrow">Catálogo por categoría</p><h2>Vende una oficina completa.</h2></div>
-      <p class="lead">Selecciona una categoría y precarga tu solicitud.</p>
-    </div>
-    <div class="category-grid">
-      <article class="category-card category-card--wide category-card--tall reveal"><img src="assets/sillas-oficina.webp" alt="Selección de sillas ergonómicas de oficina" loading="lazy"><div class="category-card-content"><h3>Sillas y asientos</h3><p>Ejecutivas, operativas y de visita.</p></div><button type="button" data-open-form data-interest="Sillas y asientos" aria-label="Cotizar sillas y asientos"></button></article>
-      <article class="category-card category-card--tall reveal"><img src="assets/home-office.webp" alt="Escritorio de madera con silla negra" loading="lazy"><div class="category-card-content"><h3>Escritorios</h3><p>Ejecutivos, operativos y elevables.</p></div><button type="button" data-open-form data-interest="Escritorios" aria-label="Cotizar escritorios"></button></article>
-      <article class="category-card reveal"><img src="assets/sala-espera.webp" alt="Sala de espera con sillas negras" loading="lazy"><div class="category-card-content"><h3>Recepciones y juntas</h3><p>La primera impresión del proyecto.</p></div><button type="button" data-open-form data-interest="Salas de juntas y recepciones" aria-label="Cotizar salas y recepciones"></button></article>
-      <article class="category-card reveal"><img src="assets/silla-escritorio.webp" alt="Silla ergonómica junto a escritorio de oficina" loading="lazy"><div class="category-card-content"><h3>Almacenaje</h3><p>Archiveros, libreros y lockers.</p></div><button type="button" data-open-form data-interest="Almacenaje" aria-label="Cotizar almacenaje"></button></article>
-      <article class="category-card reveal"><img src="assets/oficina-completa.webp" alt="Proyecto de oficina equipado con estaciones de trabajo" loading="lazy"><div class="category-card-content"><h3>Proyecto completo</h3><p>Varias áreas, una sola cotización.</p></div><button type="button" data-open-form data-interest="Proyecto completo" aria-label="Cotizar proyecto completo"></button></article>
-    </div>
-  </div>
-</section>
-<section class="section section--ink" id="proceso">
-  <div class="container">
-    <div class="section-head reveal"><div><p class="eyebrow">Cómo solicitar</p><h2>De la necesidad a la propuesta.</h2></div><p class="lead">Un proceso directo para revisar tu proyecto con el equipo de ventas.</p></div>
-    <div class="process-grid">
-      <article class="process-card reveal"><div class="process-number">01</div><h3>Comparte el proyecto</h3><p>Indica categorías, cantidades, ciudad y fecha estimada.</p></article>
-      <article class="process-card reveal"><div class="process-number">02</div><h3>Revisa las opciones</h3><p>Un asesor dará seguimiento con catálogo y alternativas aplicables.</p></article>
-      <article class="process-card reveal"><div class="process-number">03</div><h3>Define la compra</h3><p>Confirma productos y coordina los siguientes pasos con ventas.</p></article>
-    </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container tabs-shell">
-    <div class="reveal"><p class="eyebrow">Casos de uso</p><h2>Una propuesta para cada canal.</h2>
-      <div class="tab-list" role="tablist" aria-label="Casos de uso">
-        <button class="tab-button" role="tab" aria-selected="true" aria-controls="tab-revendedores" id="tab-btn-revendedores">Revendedores</button>
-        <button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-corporativos" id="tab-btn-corporativos">Corporativos</button>
-        <button class="tab-button" role="tab" aria-selected="false" aria-controls="tab-despachos" id="tab-btn-despachos">Despachos</button>
-      </div>
-    </div>
-    <div class="reveal">
-      <article class="tab-panel is-active" role="tabpanel" id="tab-revendedores" aria-labelledby="tab-btn-revendedores"><p class="kicker">Para reventa</p><h3>Amplía tu oferta sin improvisar.</h3><p>Presenta varias categorías de mobiliario y solicita apoyo en cotizaciones de volumen.</p><ul><li>Opciones por categoría</li><li>Atención por WhatsApp</li><li>Mobiliario armado</li></ul><button class="btn btn--primary" data-open-form data-interest="Proyecto completo">Solicitar catálogo</button></article>
-      <article class="tab-panel" role="tabpanel" id="tab-corporativos" aria-labelledby="tab-btn-corporativos"><p class="kicker">Proyectos de empresa</p><h3>Equipa varias áreas con orden.</h3><p>Revisa estaciones, salas, recepción, sillería y almacenaje dentro de una misma solicitud.</p><ul><li>Categorías complementarias</li><li>Asesoría según cantidad</li><li>Visita al showroom</li></ul><button class="btn btn--primary" data-open-form data-interest="Proyecto completo">Cotizar proyecto</button></article>
-      <article class="tab-panel" role="tabpanel" id="tab-despachos" aria-labelledby="tab-btn-despachos"><p class="kicker">Arquitectura e interiorismo</p><h3>Más alternativas para especificar.</h3><p>Consulta disponibilidad y opciones para integrar mobiliario en tus propuestas.</p><ul><li>Asistencia comercial</li><li>Categorías para distintas áreas</li><li>Seguimiento por proyecto</li></ul><button class="btn btn--primary" data-open-form>Hablar con ventas</button></article>
-    </div>
-  </div>
-</section>
+  </header>
 
-<section class="section section--ink" id="resenas">
-  <div class="container">
-    <div class="section-head reveal">
-      <div><p class="eyebrow">Reseñas publicadas</p><h2>La experiencia también cuenta.</h2></div>
-      <p class="lead">Comentarios tomados de compradores publicados en rematemuebles.com.</p>
-    </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#beneficios">Beneficios</a>
+    <a href="#mobiliario">Mobiliario</a>
+    <a href="#resenas">Reseñas</a>
+    <a href="#showroom">Showroom</a>
+    <a href="#preguntas">Preguntas</a>
+    <button class="btn btn-primary" type="button" data-open-modal>Solicitar cotización</button>
   </div>
-  <div class="reviews-wrap" aria-label="Carrusel de reseñas">
-    <div class="review-row"><article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“Te atienden muy bien, dan seguimiento y resuelven tus dudas. Es buen material y cumplen con lo acordado.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">JLG</span>
-            <div><strong>Jose Luis Godinez Aguilera</strong><small>Archivero de melamina</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“La atención fue muy buena y me entregaron antes de lo que habíamos acordado, lo cual me ayudó mucho.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">DA</span>
-            <div><strong>Daniel Arauz</strong><small>Compra verificada</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“En todo momento estuvieron al pendiente y dando seguimiento a mis dudas o requerimientos. Los recomiendo mucho.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">AT</span>
-            <div><strong>Anuar Terrones</strong><small>Silla de visita</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“Las atenciones fueron de primera. El producto fue entregado armado y en tiempo; cumplió con nuestras expectativas.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">HN</span>
-            <div><strong>Horacio Niebla</strong><small>Silla operativa</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“Muy útil y práctica, con buen funcionamiento.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">AO</span>
-            <div><strong>Arturo Ortiz</strong><small>Silla Cozy</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“Excelente servicio y forma rápida de comprar.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">EI</span>
-            <div><strong>Elvia Ibañez</strong><small>Compra en línea</small></div>
-          </div>
-        </article><article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“Te atienden muy bien, dan seguimiento y resuelven tus dudas. Es buen material y cumplen con lo acordado.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">JLG</span>
-            <div><strong>Jose Luis Godinez Aguilera</strong><small>Archivero de melamina</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“La atención fue muy buena y me entregaron antes de lo que habíamos acordado, lo cual me ayudó mucho.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">DA</span>
-            <div><strong>Daniel Arauz</strong><small>Compra verificada</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“En todo momento estuvieron al pendiente y dando seguimiento a mis dudas o requerimientos. Los recomiendo mucho.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">AT</span>
-            <div><strong>Anuar Terrones</strong><small>Silla de visita</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“Las atenciones fueron de primera. El producto fue entregado armado y en tiempo; cumplió con nuestras expectativas.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">HN</span>
-            <div><strong>Horacio Niebla</strong><small>Silla operativa</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“Muy útil y práctica, con buen funcionamiento.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">AO</span>
-            <div><strong>Arturo Ortiz</strong><small>Silla Cozy</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“Excelente servicio y forma rápida de comprar.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">EI</span>
-            <div><strong>Elvia Ibañez</strong><small>Compra en línea</small></div>
-          </div>
-        </article></div>
-    <div class="review-row review-row--reverse"><article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“Excelente servicio y forma rápida de comprar.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">EI</span>
-            <div><strong>Elvia Ibañez</strong><small>Compra en línea</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“Muy útil y práctica, con buen funcionamiento.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">AO</span>
-            <div><strong>Arturo Ortiz</strong><small>Silla Cozy</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“Las atenciones fueron de primera. El producto fue entregado armado y en tiempo; cumplió con nuestras expectativas.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">HN</span>
-            <div><strong>Horacio Niebla</strong><small>Silla operativa</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“En todo momento estuvieron al pendiente y dando seguimiento a mis dudas o requerimientos. Los recomiendo mucho.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">AT</span>
-            <div><strong>Anuar Terrones</strong><small>Silla de visita</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“La atención fue muy buena y me entregaron antes de lo que habíamos acordado, lo cual me ayudó mucho.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">DA</span>
-            <div><strong>Daniel Arauz</strong><small>Compra verificada</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“Te atienden muy bien, dan seguimiento y resuelven tus dudas. Es buen material y cumplen con lo acordado.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">JLG</span>
-            <div><strong>Jose Luis Godinez Aguilera</strong><small>Archivero de melamina</small></div>
-          </div>
-        </article><article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“Excelente servicio y forma rápida de comprar.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">EI</span>
-            <div><strong>Elvia Ibañez</strong><small>Compra en línea</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“Muy útil y práctica, con buen funcionamiento.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">AO</span>
-            <div><strong>Arturo Ortiz</strong><small>Silla Cozy</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“Las atenciones fueron de primera. El producto fue entregado armado y en tiempo; cumplió con nuestras expectativas.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">HN</span>
-            <div><strong>Horacio Niebla</strong><small>Silla operativa</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“En todo momento estuvieron al pendiente y dando seguimiento a mis dudas o requerimientos. Los recomiendo mucho.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">AT</span>
-            <div><strong>Anuar Terrones</strong><small>Silla de visita</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“La atención fue muy buena y me entregaron antes de lo que habíamos acordado, lo cual me ayudó mucho.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">DA</span>
-            <div><strong>Daniel Arauz</strong><small>Compra verificada</small></div>
-          </div>
-        </article>
-<article class="review-card">
-          <div><div class="review-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-          <p class="review-quote">“Te atienden muy bien, dan seguimiento y resuelven tus dudas. Es buen material y cumplen con lo acordado.”</p></div>
-          <div class="reviewer"><span class="avatar" aria-hidden="true">JLG</span>
-            <div><strong>Jose Luis Godinez Aguilera</strong><small>Archivero de melamina</small></div>
-          </div>
-        </article></div>
-  </div>
-</section>
 
-<section class="section" id="showroom">
-  <div class="container showroom-grid">
-    <div class="showroom-copy reveal">
-      <p class="eyebrow">Showroom Guadalajara</p>
-      <h2>Prueba antes de decidir.</h2>
-      <p>Conoce materiales, compara ergonomía y recibe atención presencial para elegir el mobiliario adecuado.</p>
-      <div class="contact-list">
-        <div class="contact-row"><span class="icon-badge" aria-hidden="true">⌖</span><div><strong>Dirección</strong><br>Av. Agustín Yáñez #1293, Col. Moderna, Guadalajara, Jal. CP 44910</div></div>
-        <div class="contact-row"><span class="icon-badge" aria-hidden="true">◷</span><div><strong>Horario</strong><br>Lunes a viernes, 9:30 a. m. a 7:00 p. m.<br>Sábado, 10:30 a. m. a 3:00 p. m.</div></div>
-        <div class="contact-row"><span class="icon-badge" aria-hidden="true">☎</span><div><strong>Contacto</strong><br><a href="tel:+523314540787">33 1454 0787</a> · <a href="mailto:infoventas@rematemuebles.com">infoventas@rematemuebles.com</a></div></div>
-      </div>
-      <div class="inline-actions">
-        <a class="btn btn--dark" href="https://maps.google.com/?q=Av.+Agust%C3%ADn+Y%C3%A1%C3%B1ez+1293,+Col.+Moderna,+Guadalajara,+Jalisco" target="_blank" rel="noopener">Cómo llegar</a>
-        <button class="btn btn--ghost" type="button" data-open-form data-interest="Visita al showroom">Agendar visita</button>
-      </div>
-    </div>
-    <div class="map-shell reveal">
-      <iframe loading="lazy" title="Mapa del showroom de Remate Muebles" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.%20Agust%C3%ADn%20Y%C3%A1%C3%B1ez%201293%2C%20Col.%20Moderna%2C%20Guadalajara%2C%20Jalisco&output=embed"></iframe>
-      <div class="map-overlay">Showroom Remate Muebles · Guadalajara</div>
-    </div>
-  </div>
-</section>
-<section class="section section--white" id="faq">
-  <div class="container"><div class="section-head reveal"><div><p class="eyebrow">Preguntas frecuentes</p><h2>Antes de solicitar mayoreo.</h2></div></div>
-    <div class="faq-list">
-      <div class="faq-item"><button class="faq-question" aria-expanded="true"><span>¿Cómo solicito precios por volumen?</span><span>+</span></button><div class="faq-answer"><div><p>Completa el formulario con empresa, categoría y volumen estimado. El equipo de ventas dará seguimiento con la información aplicable.</p></div></div></div>
-      <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>¿Existe una compra mínima?</span><span>+</span></button><div class="faq-answer"><div><p>La condición depende del producto y la cantidad. Solicita una revisión para confirmar el esquema disponible.</p></div></div></div>
-      <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>¿Los muebles se entregan armados?</span><span>+</span></button><div class="faq-answer"><div><p>El brief comercial indica entrega de mobiliario armado. Confirma alcance, zona y producto con el asesor antes de cerrar la compra.</p></div></div></div>
-      <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>¿Puedo visitar el showroom?</span><span>+</span></button><div class="faq-answer"><div><p>Sí. El showroom está en Av. Agustín Yáñez #1293, Col. Moderna, Guadalajara. Puedes agendar una visita desde esta página.</p></div></div></div>
-      <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>¿Hay entregas fuera de Guadalajara?</span><span>+</span></button><div class="faq-answer"><div><p>La cobertura y condiciones dependen del pedido. Indica tu ciudad en el formulario para revisar alternativas con ventas.</p></div></div></div>
-    </div>
-  </div>
-</section>
-<section class="section"><div class="container"><div class="cta-panel reveal"><p class="eyebrow">Abre una nueva línea de venta</p><h2>Tu próxima cotización empieza aquí.</h2><p class="lead">Comparte tu proyecto y solicita catálogo, disponibilidad y atención comercial.</p><button class="btn btn--primary" type="button" data-open-form>Solicitar asesoría</button></div></div></section>
-</main>
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">¿Estrenando o mudando tu oficina?</p>
+          <h1>Amuebla tu nuevo espacio sin complicaciones ni cajas por armar.</h1>
+          <p class="lead">Mobiliario de línea alta, nuevo y de entrega inmediata a precio outlet. Nos encargamos de todo el proceso para que tú te enfoques en tu negocio.</p>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="assets/logo-remate-light.png" alt="Remate Muebles de Oficina Outlet" width="1032" height="404">
-        <p>Mobiliario de oficina con atención en Guadalajara y venta en línea.</p>
-      </div>
-      <div class="footer-col"><h3>Navega</h3><div class="footer-links">
-        <a href="b2c.html">Compra personal</a><a href="#catalogo">Categorías</a><a href="#showroom">Showroom</a><a href="#faq">Preguntas frecuentes</a>
-      </div></div>
-      <div class="footer-col"><h3>Contacto</h3><div class="footer-links">
-        <a href="https://wa.me/523319856883" target="_blank" rel="noopener">WhatsApp: 33 1985 6883</a>
-        <a href="tel:+523314540787">Teléfono: 33 1454 0787</a>
-        <a href="mailto:infoventas@rematemuebles.com">infoventas@rematemuebles.com</a>
-      </div></div>
-      <div class="footer-col"><h3>Información</h3><div class="footer-links">
-        <a href="https://rematemuebles.com/pages/aviso-de-privacidad" target="_blank" rel="noopener">Aviso de privacidad</a>
-        <a href="https://rematemuebles.com/pages/terminos-y-condiciones" target="_blank" rel="noopener">Términos y condiciones</a>
-        <a href="https://rematemuebles.com/pages/politicas-de-envio" target="_blank" rel="noopener">Políticas de envío</a>
-        <a href="https://rematemuebles.com/pages/politicas-de-devolucion" target="_blank" rel="noopener">Devoluciones</a>
-      </div></div>
-    </div>
-    <div class="footer-bottom"><span>© <span data-year></span> Remate Muebles de Oficina.</span><a href="https://dinametra.com/" target="_blank" rel="noopener">Desarrollado por Dinametra.com</a></div>
-  </div>
-</footer>
-<a class="wa-float" href="https://wa.me/523319856883" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">W</a>
-<div class="cursor-dot" aria-hidden="true"></div><div class="cursor-ring" aria-hidden="true"></div>
+          <div class="hero-actions">
+            <button class="btn btn-primary" type="button" data-open-modal>
+              Solicitar cotización personalizada
+              <svg class="icon-arrow" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <a class="btn btn-secondary" href="#showroom">Visita el showroom</a>
+          </div>
 
-<div class="modal" id="leadModal" aria-hidden="true">
-  <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <aside class="modal-aside">
-      <div><p class="eyebrow">Remate Muebles</p><h3>Decide con información clara.</h3><p>Atención por llamada o WhatsApp para revisar productos y necesidades.</p></div>
-      <div class="mini-list"><span>Datos protegidos</span><span>Sin compromiso de compra</span><span>Seguimiento personalizado</span></div>
-    </aside>
-    <div class="modal-main">
-      <button class="modal-close" type="button" data-close-modal aria-label="Cerrar formulario">×</button>
-      <p class="eyebrow">Cotización</p><h2 id="modalTitle">Solicita catálogo y asesoría</h2><p class="muted">Cuéntanos qué necesitas vender o cotizar. Un asesor dará seguimiento a tu solicitud.</p>
-      <form id="leadForm">
-        <input type="hidden" name="audiencia" value="b2b">
-        <div class="form-grid">
-          <div class="field"><label for="nombre">Nombre completo</label><input id="nombre" name="nombre" autocomplete="name" required></div>
-          <div class="field"><label for="telefono">Teléfono / WhatsApp</label><input id="telefono" name="telefono" type="tel" inputmode="tel" autocomplete="tel" required></div>
-          <div class="field"><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" autocomplete="email" required></div>
-          <div class="field"><label for="interes">Mobiliario de interés</label><select id="interes" name="interes" required><option value="">Selecciona</option><option>Sillas y asientos</option><option>Escritorios</option><option>Salas de juntas y recepciones</option><option>Almacenaje</option><option>Confort y espera</option><option>Proyecto completo</option><option>Visita al showroom</option></select></div>
-          
-        <div class="field"><label for="empresa">Empresa o negocio</label><input id="empresa" name="empresa" autocomplete="organization" required></div>
-        <div class="field"><label for="volumen">Volumen estimado</label><select id="volumen" name="volumen"><option value="">Selecciona</option><option>1 a 5 piezas</option><option>6 a 15 piezas</option><option>16 a 50 piezas</option><option>Más de 50 piezas</option><option>Por definir</option></select></div>
-        
-          <div class="field field--full"><label for="mensaje">Detalles del proyecto <span class="muted">(opcional)</span></label><textarea id="mensaje" name="mensaje" placeholder="Cantidad, ciudad, medidas o contexto relevante"></textarea></div>
-          <label class="check-field field--full"><input type="checkbox" name="privacidad" required><span>Acepto el tratamiento de mis datos conforme al <a class="text-link" href="https://rematemuebles.com/pages/aviso-de-privacidad" target="_blank" rel="noopener">aviso de privacidad</a>.</span></label>
+          <ul class="hero-proof" aria-label="Beneficios principales">
+            <li><span class="check">✓</span><span>Muebles entregados 100% armados.</span></li>
+            <li><span class="check">✓</span><span>Respaldo y garantía directa con más de 25 años de trayectoria.</span></li>
+            <li><span class="check">✓</span><span>Asesoría personalizada en distribución y presupuesto por llamada.</span></li>
+          </ul>
         </div>
-        <div class="form-actions"><button class="btn btn--primary" type="submit">Solicitar asesoría y catálogo</button></div>
-        <p class="form-note">Al enviar, te llevaremos a la página de confirmación y contacto.</p>
+
+        <div class="hero-visual reveal" aria-label="Oficina con mobiliario de Remate Muebles">
+          <figure class="hero-image-main">
+            <img src="assets/silla-escritorio-claro.webp" alt="Silla de oficina frente a un escritorio de madera" width="864" height="1152">
+          </figure>
+          <figure class="hero-image-small">
+            <img src="assets/silla-escritorio-industrial.webp" alt="Silla ergonómica y escritorio de oficina" width="912" height="1136">
+          </figure>
+          <div class="hero-stamp">Entrega<br>100%<br>armada</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-label="Propuesta de valor">
+      <div class="marquee-track">
+        <span class="marquee-item">Entrega 100% armada</span>
+        <span class="marquee-item">Acompañamiento cercano</span>
+        <span class="marquee-item">Línea alta a precio outlet</span>
+        <span class="marquee-item">Respaldo y trayectoria</span>
+        <span class="marquee-item">Entrega 100% armada</span>
+        <span class="marquee-item">Acompañamiento cercano</span>
+        <span class="marquee-item">Línea alta a precio outlet</span>
+        <span class="marquee-item">Respaldo y trayectoria</span>
+      </div>
+    </div>
+
+    <section class="section" id="beneficios">
+      <div class="container">
+        <div class="section-heading split reveal">
+          <div>
+            <p class="eyebrow">Tu nueva oficina</p>
+            <h2>Sin complicaciones ni cajas por armar.</h2>
+          </div>
+        </div>
+
+        <div class="cards-grid">
+          <article class="value-card reveal">
+            <span class="card-number">01</span>
+            <h3>Entrega 100% armada</h3>
+            <p>Olvídate de cajas y manuales. Recibe tus muebles listos para usarse.</p>
+          </article>
+
+          <article class="value-card reveal">
+            <span class="card-number">02</span>
+            <h3>Acompañamiento cercano</h3>
+            <p>Un experto te guiará por llamada, WhatsApp o en sucursal para optimizar tu espacio y presupuesto.</p>
+          </article>
+
+          <article class="value-card reveal">
+            <span class="card-number">03</span>
+            <h3>Línea alta a precio outlet</h3>
+            <p>Diseño premium y máxima ergonomía sin pagar sobreprecios.</p>
+          </article>
+
+          <article class="value-card reveal">
+            <span class="card-number">04</span>
+            <h3>Respaldo y trayectoria</h3>
+            <p>Miles de oficinas amuebladas con éxito y garantía directa en tu inversión.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" id="mobiliario">
+      <div class="container">
+        <div class="section-heading split reveal">
+          <div>
+            <p class="eyebrow">Categorías</p>
+            <h2>Todo para equipar tu nuevo corporativo.</h2>
+          </div>
+          <p class="lead">Diseño, comodidad y ergonomía para cada área de tu empresa.</p>
+        </div>
+
+        <div class="catalog-grid">
+          <article class="catalog-card reveal" data-open-modal data-interest="Sillería Ergonómica" tabindex="0">
+            <img src="assets/sillas-oficina.webp" alt="Sillería ergonómica para oficina" loading="lazy" width="864" height="1152">
+            <div class="catalog-copy">
+              <h3>Sillería Ergonómica</h3>
+              <p>Máximo confort para jornadas largas.</p>
+              <span class="text-link">Cotizar piezas <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal" data-open-modal data-interest="Escritorios Ejecutivos y Elevables" tabindex="0">
+            <img src="assets/silla-escritorio-claro.webp" alt="Escritorio ejecutivo con silla de oficina" loading="lazy" width="864" height="1152">
+            <div class="catalog-copy">
+              <h3>Escritorios Ejecutivos y Elevables</h3>
+              <p>Diseño impecable y funcionalidad.</p>
+              <span class="text-link">Cotizar piezas <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal" data-open-modal data-interest="Salas de Juntas" tabindex="0">
+            <img src="assets/sala-juntas.webp" alt="Sala de juntas con mobiliario de oficina" loading="lazy" width="864" height="1152">
+            <div class="catalog-copy">
+              <h3>Salas de Juntas</h3>
+              <p>Espacios que proyectan profesionalismo.</p>
+              <span class="text-link">Cotizar piezas <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal" data-open-modal data-interest="Recepciones" tabindex="0">
+            <img src="assets/oficina-equipada.webp" alt="Mobiliario para áreas de recepción y trabajo" loading="lazy" width="864" height="1152">
+            <div class="catalog-copy">
+              <h3>Recepciones</h3>
+              <p>La mejor primera impresión para tus visitas.</p>
+              <span class="text-link">Cotizar piezas <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal" data-open-modal data-interest="Almacenaje" tabindex="0">
+            <img src="assets/silla-escritorio-industrial.webp" alt="Oficina con mobiliario y almacenaje" loading="lazy" width="912" height="1136">
+            <div class="catalog-copy">
+              <h3>Almacenaje</h3>
+              <p>Archiveros y libreros que optimizan el espacio.</p>
+              <span class="text-link">Cotizar piezas <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+
+          <article class="catalog-card reveal" data-open-modal data-interest="Mobiliario de Confort" tabindex="0">
+            <img src="assets/sillas-oficina.webp" alt="Mobiliario de confort para oficina" loading="lazy" width="864" height="1152">
+            <div class="catalog-copy">
+              <h3>Mobiliario de Confort</h3>
+              <p>Sofás y salas de espera.</p>
+              <span class="text-link">Cotizar piezas <span aria-hidden="true">→</span></span>
+            </div>
+          </article>
+        </div>
+
+        <div class="hero-actions reveal">
+          <button class="btn btn-primary" type="button" data-open-modal>Cotiza estas piezas para tu equipo</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resenas">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Reseñas reales</p>
+          <h2>Esto dicen nuestros clientes.</h2>
+        </div>
+      </div>
+
+      <div class="reviews-wrap" aria-label="Reseñas de clientes">
+        <div class="reviews-row">
+          <article class="review-card">
+            <figure class="review-photo" aria-hidden="false"><img src="assets/oficina-equipada.webp" alt="Oficina equipada con mobiliario de Remate Muebles" width="720" height="420" loading="lazy"></figure>
+            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            <blockquote>“Te atienden muy bien, le dan seguimiento en todo y te sacan de dudas. Es buen material y cumplen con lo que es.”</blockquote>
+            <div class="reviewer">
+              <img class="reviewer-avatar" src="assets/oficina-equipada.webp" alt="" width="52" height="52" loading="lazy">
+              <div><strong>Jose Luis Godinez Aguilera</strong><small>Archivero Melamina 4 gavetas Rem</small></div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <figure class="review-photo" aria-hidden="false"><img src="assets/sala-juntas.webp" alt="Mobiliario instalado en un espacio de oficina" width="720" height="420" loading="lazy"></figure>
+            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            <blockquote>“Excelente servicio, entrega antes de lo previsto. La atención fue muy buena y me entregaron antes de lo que habíamos acordado, lo cual me ayudó mucho.”</blockquote>
+            <div class="reviewer">
+              <img class="reviewer-avatar" src="assets/sala-juntas.webp" alt="" width="52" height="52" loading="lazy">
+              <div><strong>Daniel Arauz</strong><small>Sillón Puff Otto</small></div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <figure class="review-photo" aria-hidden="false"><img src="assets/sillas-oficina.webp" alt="Sillas de oficina en un espacio equipado" width="720" height="420" loading="lazy"></figure>
+            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            <blockquote>“Fácil y confiable. En todo momento estuvieron al pendiente y dando seguimiento a mis dudas o requerimientos. Los recomiendo mucho.”</blockquote>
+            <div class="reviewer">
+              <img class="reviewer-avatar" src="assets/sillas-oficina.webp" alt="" width="52" height="52" loading="lazy">
+              <div><strong>Anuar Terrones</strong><small>Silla visitante ecovisita</small></div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <figure class="review-photo" aria-hidden="false"><img src="assets/silla-escritorio-industrial.webp" alt="Silla ergonómica frente a un escritorio de oficina" width="720" height="420" loading="lazy"></figure>
+            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            <blockquote>“Excelente producto, de buena calidad y precio. Las atenciones fueron de primera; el producto fue entregado armado y en tiempo. Cumplió al 100% con nuestras expectativas.”</blockquote>
+            <div class="reviewer">
+              <img class="reviewer-avatar" src="assets/silla-escritorio-industrial.webp" alt="" width="52" height="52" loading="lazy">
+              <div><strong>Horacio Niebla</strong><small>Silla de Oficina Operativa - Mandalorian</small></div>
+            </div>
+          </article>
+
+          <article class="review-card" aria-hidden="true">
+            <figure class="review-photo" aria-hidden="true"><img src="assets/oficina-equipada.webp" alt="" width="720" height="420" loading="lazy"></figure>
+            <div class="review-stars">★★★★★</div>
+            <blockquote>“Te atienden muy bien, le dan seguimiento en todo y te sacan de dudas. Es buen material y cumplen con lo que es.”</blockquote>
+            <div class="reviewer"><img class="reviewer-avatar" src="assets/oficina-equipada.webp" alt="" width="52" height="52" loading="lazy"><div><strong>Jose Luis Godinez Aguilera</strong><small>Archivero Melamina 4 gavetas Rem</small></div></div>
+          </article>
+          <article class="review-card" aria-hidden="true">
+            <figure class="review-photo" aria-hidden="true"><img src="assets/sala-juntas.webp" alt="" width="720" height="420" loading="lazy"></figure>
+            <div class="review-stars">★★★★★</div>
+            <blockquote>“Excelente servicio, entrega antes de lo previsto. La atención fue muy buena y me entregaron antes de lo que habíamos acordado, lo cual me ayudó mucho.”</blockquote>
+            <div class="reviewer"><img class="reviewer-avatar" src="assets/sala-juntas.webp" alt="" width="52" height="52" loading="lazy"><div><strong>Daniel Arauz</strong><small>Sillón Puff Otto</small></div></div>
+          </article>
+          <article class="review-card" aria-hidden="true">
+            <figure class="review-photo" aria-hidden="true"><img src="assets/sillas-oficina.webp" alt="" width="720" height="420" loading="lazy"></figure>
+            <div class="review-stars">★★★★★</div>
+            <blockquote>“Fácil y confiable. En todo momento estuvieron al pendiente y dando seguimiento a mis dudas o requerimientos. Los recomiendo mucho.”</blockquote>
+            <div class="reviewer"><img class="reviewer-avatar" src="assets/sillas-oficina.webp" alt="" width="52" height="52" loading="lazy"><div><strong>Anuar Terrones</strong><small>Silla visitante ecovisita</small></div></div>
+          </article>
+          <article class="review-card" aria-hidden="true">
+            <figure class="review-photo" aria-hidden="true"><img src="assets/silla-escritorio-industrial.webp" alt="" width="720" height="420" loading="lazy"></figure>
+            <div class="review-stars">★★★★★</div>
+            <blockquote>“Excelente producto, de buena calidad y precio. Las atenciones fueron de primera; el producto fue entregado armado y en tiempo. Cumplió al 100% con nuestras expectativas.”</blockquote>
+            <div class="reviewer"><img class="reviewer-avatar" src="assets/silla-escritorio-industrial.webp" alt="" width="52" height="52" loading="lazy"><div><strong>Horacio Niebla</strong><small>Silla de Oficina Operativa - Mandalorian</small></div></div>
+          </article>
+        </div>
+
+        <div class="reviews-row reverse">
+          <article class="review-card">
+            <figure class="review-photo" aria-hidden="false"><img src="assets/oficina-equipada.webp" alt="Oficina equipada con mobiliario de Remate Muebles" width="720" height="420" loading="lazy"></figure>
+            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            <blockquote>“Excelente producto, de buena calidad y precio. Las atenciones fueron de primera; el producto fue entregado armado y en tiempo. Cumplió al 100% con nuestras expectativas.”</blockquote>
+            <div class="reviewer"><img class="reviewer-avatar" src="assets/oficina-equipada.webp" alt="" width="52" height="52" loading="lazy"><div><strong>Horacio Niebla</strong><small>Silla de Oficina Operativa - Mandalorian</small></div></div>
+          </article>
+          <article class="review-card">
+            <figure class="review-photo" aria-hidden="false"><img src="assets/sala-juntas.webp" alt="Mobiliario instalado en un espacio de oficina" width="720" height="420" loading="lazy"></figure>
+            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            <blockquote>“Fácil y confiable. En todo momento estuvieron al pendiente y dando seguimiento a mis dudas o requerimientos. Los recomiendo mucho.”</blockquote>
+            <div class="reviewer"><img class="reviewer-avatar" src="assets/sala-juntas.webp" alt="" width="52" height="52" loading="lazy"><div><strong>Anuar Terrones</strong><small>Silla visitante ecovisita</small></div></div>
+          </article>
+          <article class="review-card">
+            <figure class="review-photo" aria-hidden="false"><img src="assets/sillas-oficina.webp" alt="Sillas de oficina en un espacio equipado" width="720" height="420" loading="lazy"></figure>
+            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            <blockquote>“Excelente servicio, entrega antes de lo previsto. La atención fue muy buena y me entregaron antes de lo que habíamos acordado, lo cual me ayudó mucho.”</blockquote>
+            <div class="reviewer"><img class="reviewer-avatar" src="assets/sillas-oficina.webp" alt="" width="52" height="52" loading="lazy"><div><strong>Daniel Arauz</strong><small>Sillón Puff Otto</small></div></div>
+          </article>
+          <article class="review-card">
+            <figure class="review-photo" aria-hidden="false"><img src="assets/silla-escritorio-industrial.webp" alt="Silla ergonómica frente a un escritorio de oficina" width="720" height="420" loading="lazy"></figure>
+            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+            <blockquote>“Te atienden muy bien, le dan seguimiento en todo y te sacan de dudas. Es buen material y cumplen con lo que es.”</blockquote>
+            <div class="reviewer"><img class="reviewer-avatar" src="assets/silla-escritorio-industrial.webp" alt="" width="52" height="52" loading="lazy"><div><strong>Jose Luis Godinez Aguilera</strong><small>Archivero Melamina 4 gavetas Rem</small></div></div>
+          </article>
+
+          <article class="review-card" aria-hidden="true">
+            <figure class="review-photo" aria-hidden="true"><img src="assets/oficina-equipada.webp" alt="" width="720" height="420" loading="lazy"></figure>
+            <div class="review-stars">★★★★★</div>
+            <blockquote>“Excelente producto, de buena calidad y precio. Las atenciones fueron de primera; el producto fue entregado armado y en tiempo. Cumplió al 100% con nuestras expectativas.”</blockquote>
+            <div class="reviewer"><img class="reviewer-avatar" src="assets/oficina-equipada.webp" alt="" width="52" height="52" loading="lazy"><div><strong>Horacio Niebla</strong><small>Silla de Oficina Operativa - Mandalorian</small></div></div>
+          </article>
+          <article class="review-card" aria-hidden="true">
+            <figure class="review-photo" aria-hidden="true"><img src="assets/sala-juntas.webp" alt="" width="720" height="420" loading="lazy"></figure>
+            <div class="review-stars">★★★★★</div>
+            <blockquote>“Fácil y confiable. En todo momento estuvieron al pendiente y dando seguimiento a mis dudas o requerimientos. Los recomiendo mucho.”</blockquote>
+            <div class="reviewer"><img class="reviewer-avatar" src="assets/sala-juntas.webp" alt="" width="52" height="52" loading="lazy"><div><strong>Anuar Terrones</strong><small>Silla visitante ecovisita</small></div></div>
+          </article>
+          <article class="review-card" aria-hidden="true">
+            <figure class="review-photo" aria-hidden="true"><img src="assets/sillas-oficina.webp" alt="" width="720" height="420" loading="lazy"></figure>
+            <div class="review-stars">★★★★★</div>
+            <blockquote>“Excelente servicio, entrega antes de lo previsto. La atención fue muy buena y me entregaron antes de lo que habíamos acordado, lo cual me ayudó mucho.”</blockquote>
+            <div class="reviewer"><img class="reviewer-avatar" src="assets/sillas-oficina.webp" alt="" width="52" height="52" loading="lazy"><div><strong>Daniel Arauz</strong><small>Sillón Puff Otto</small></div></div>
+          </article>
+          <article class="review-card" aria-hidden="true">
+            <figure class="review-photo" aria-hidden="true"><img src="assets/silla-escritorio-industrial.webp" alt="" width="720" height="420" loading="lazy"></figure>
+            <div class="review-stars">★★★★★</div>
+            <blockquote>“Te atienden muy bien, le dan seguimiento en todo y te sacan de dudas. Es buen material y cumplen con lo que es.”</blockquote>
+            <div class="reviewer"><img class="reviewer-avatar" src="assets/silla-escritorio-industrial.webp" alt="" width="52" height="52" loading="lazy"><div><strong>Jose Luis Godinez Aguilera</strong><small>Archivero Melamina 4 gavetas Rem</small></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" id="showroom">
+      <div class="container showroom-grid">
+        <div class="showroom-copy reveal">
+          <div>
+            <p class="eyebrow">Showroom</p>
+            <h2>¿Prefieres comprobar la calidad en persona? ¡Visítanos!</h2>
+            <p>Ven a nuestro showroom en Guadalajara, Jalisco. Toca los materiales, pon a prueba la ergonomía de nuestras sillas ejecutivas y recibe asesoría cara a cara para planificar tu nueva oficina.</p>
+          </div>
+
+          <div>
+            <ul class="contact-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-5.2 7-12a7 7 0 1 0-14 0c0 6.8 7 12 7 12Z" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="9" r="2.2" stroke="currentColor" stroke-width="1.7"/></svg>
+                <span>Av. Circunvalación Agustín Yáñez 1293, Moderna, Guadalajara, Jal.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/><path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+                <span>Lunes a viernes de 9:30 a. m. a 7:00 p. m., sábado de 10:30 a. m. a 3:00 p. m. y domingo cerrado.</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8.2 4.8 5.7 6.4c-1.2.8-.9 3.7.8 6.5 1.7 2.8 4.1 4.5 5.4 3.8l2.6-1.5-2.2-3.2-1.8.9c-.8-.5-1.7-1.7-2.2-2.7-.6-1-.9-2.2-.8-3.1l1.9-1-1.2-1.3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                <span>33 1985 6883</span>
+              </li>
+            </ul>
+            <div class="hero-actions">
+              <a class="btn btn-light" href="https://maps.app.goo.gl/wfvsq4hZgYPs1dT29" target="_blank" rel="noopener">Cómo llegar en Google Maps</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-card reveal">
+          <iframe title="Mapa del showroom de Remate Muebles" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=20.6594152,-103.3572465&z=17&output=embed"></iframe>
+          <div class="map-actions">
+            <button class="btn btn-dark" type="button" data-open-modal>Solicitar cotización personalizada</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="preguntas">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Preguntas frecuentes</p>
+          <h2>Respondemos tus dudas.</h2>
+        </div>
+
+        <div class="faq-list reveal">
+          <article class="faq-item is-open">
+            <button class="faq-question" type="button" aria-expanded="true">
+              <span>¿Es seguro comprar en línea en Remate Muebles de Oficina?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer"><div><p>Sí. Contamos con plataformas con un estricto sistema de seguridad, como Shopify, PayPal y Conekta.</p></div></div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>¿Qué tipo de muebles se venden en Remate Muebles de Oficina?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer"><div><p>Todo tipo de mobiliario para oficinas: escritorios, sillas ejecutivas, sillas operativas, sillas de visita, estaciones de trabajo, recepciones, mesas de juntas, lockers, libreros, bancas y cubículos, entre muchos productos más.</p></div></div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>¿Cuál es el tiempo de entrega de mi pedido?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer"><div><p>En cada uno de nuestros artículos podrás encontrar el tiempo de entrega según el tipo de producto: de 3 a 9 días hábiles, de 10 a 20 días hábiles o consulta con tu asesor de ventas.</p></div></div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>¿Puedo recoger en la tienda?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer"><div><p>Si así lo deseas, puedes pasar a recoger directamente en tienda dentro de nuestro horario: lunes a viernes de 9:30 a. m. a 7:00 p. m. y sábados de 10:30 a. m. a 3:00 p. m.</p></div></div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>¿Cómo puedo obtener una factura por mi compra en línea?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer"><div><p>Con gusto podemos emitir tu factura. Comparte tus datos de facturación al correo infoventas@rematemuebles.com. Nuestros precios publicados ya incluyen IVA.</p></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight closing-cta">
+      <div class="container closing-grid">
+        <h2>Solicita tu cotización personalizada.</h2>
+        <button class="btn btn-dark" type="button" data-open-modal>Cotiza estas piezas para tu equipo</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img class="footer-logo" src="assets/logo-remate-inverse.svg" alt="Remate Muebles de Oficina Outlet" width="608" height="198">
+        </div>
+
+        <div class="footer-col">
+          <h3>Remate de Muebles</h3>
+          <ul class="footer-links">
+            <li><a href="https://rematemuebles.com/pages/conocenos" target="_blank" rel="noopener">Conócenos</a></li>
+            <li><a href="https://rematemuebles.com/blogs/blog" target="_blank" rel="noopener">Blog</a></li>
+            <li><a href="https://rematemuebles.com/pages/contactanos" target="_blank" rel="noopener">Contáctanos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Información</h3>
+          <ul class="footer-links">
+            <li><a href="https://rematemuebles.com/pages/aviso-de-privacidad" target="_blank" rel="noopener">Aviso de Privacidad</a></li>
+            <li><a href="https://rematemuebles.com/pages/terminos-y-condiciones" target="_blank" rel="noopener">Términos y Condiciones</a></li>
+            <li><a href="https://rematemuebles.com/pages/politicas-de-envio" target="_blank" rel="noopener">Políticas de Envío</a></li>
+            <li><a href="https://rematemuebles.com/pages/politicas-de-devolucion" target="_blank" rel="noopener">Políticas de Devolución</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contacto</h3>
+          <ul class="footer-links">
+            <li><a href="tel:+523314540787">(33) 1454 0787</a></li>
+            <li><a href="mailto:infoventas@rematemuebles.com">infoventas@rematemuebles.com</a></li>
+            <li>Av. Agustín Yáñez #1293, Col. Moderna, Guadalajara, Jal.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>Remate Mueble Outlet | Todos los derechos reservados.</span>
+        <a href="https://dinametra.com" target="_blank" rel="noopener">Desarrollado por Dinametra.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" data-whatsapp-general href="#" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg class="whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.198.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.57-.01-.198 0-.52.074-.792.372-.273.297-1.04 1.016-1.04 2.479s1.065 2.875 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347Zm-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.981.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.99c-.003 5.45-4.437 9.884-9.884 9.884Zm8.413-18.297A11.815 11.815 0 0 0 12.055 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.689 1.448h.005c6.559 0 11.894-5.335 11.896-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <div class="modal" id="lead-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close" type="button" aria-label="Cerrar formulario">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+
+      <div class="modal-header">
+        <p class="eyebrow">Cotización personalizada</p>
+        <h2 id="modal-title">Solicita tu cotización personalizada</h2>
+        <p>Déjanos tus datos y un asesor experto te contactará para armar tu propuesta a la medida sin costo.</p>
+      </div>
+
+      <form class="lead-form" novalidate>
+        <input type="hidden" name="interest" value="">
+        <div class="form-grid">
+          <div class="field">
+            <label for="b2c-name">Nombre completo</label>
+            <input id="b2c-name" name="name" type="text" autocomplete="name" placeholder="Nombre y apellido" required>
+          </div>
+
+          <div class="field">
+            <label for="b2c-email">Correo electrónico corporativo</label>
+            <input id="b2c-email" name="email" type="email" autocomplete="email" placeholder="Ej. correo@empresa.com" required>
+          </div>
+
+          <div class="field">
+            <label for="b2c-phone">Teléfono / WhatsApp</label>
+            <input id="b2c-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Ej. 33 1234 5678" required>
+          </div>
+
+          <div class="field">
+            <label for="b2c-people">¿Para cuántas personas es el espacio?</label>
+            <input id="b2c-people" name="people" type="number" min="1" inputmode="numeric" placeholder="Ej. 10" required>
+          </div>
+
+          <div class="field">
+            <label for="b2c-date">Fecha estimada de mudanza / entrega</label>
+            <input id="b2c-date" name="deliveryDate" type="text" inputmode="numeric" autocomplete="off" placeholder="dd/mm/aaaa" data-date-input required>
+          </div>
+
+          <fieldset class="field fieldset field-full">
+            <legend>¿Qué tipo de mobiliario buscas?</legend>
+            <div class="checkbox-grid">
+              <label class="check-option"><input type="checkbox" name="furniture" value="Sillas ergonómicas y ejecutivas"><span>Sillas ergonómicas y ejecutivas</span></label>
+              <label class="check-option"><input type="checkbox" name="furniture" value="Escritorios ejecutivos o elevables"><span>Escritorios ejecutivos o elevables</span></label>
+              <label class="check-option"><input type="checkbox" name="furniture" value="Archiveros y libreros"><span>Archiveros y libreros</span></label>
+              <label class="check-option"><input type="checkbox" name="furniture" value="Salas de juntas o recepciones"><span>Salas de juntas o recepciones</span></label>
+              <label class="check-option"><input type="checkbox" name="furniture" value="Mobiliario de confort"><span>Mobiliario de confort</span></label>
+            </div>
+          </fieldset>
+
+          <label class="check-option field-full">
+            <input type="checkbox" name="privacy" required>
+            <span>Acepto el <a href="https://rematemuebles.com/pages/aviso-de-privacidad" target="_blank" rel="noopener">Aviso de Privacidad</a>.</span>
+          </label>
+        </div>
+
+        <p class="form-status" role="alert" aria-live="polite"></p>
+        <div class="form-actions">
+          <p class="form-note">Remate Muebles de Oficina</p>
+          <button class="btn btn-primary" type="submit">Solicitar propuesta y asesoría gratuita</button>
+        </div>
       </form>
     </div>
   </div>
-</div>
-<script src="script.js" defer></script>
-</body></html>
+</body>
+</html>
